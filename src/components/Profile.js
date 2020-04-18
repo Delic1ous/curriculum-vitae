@@ -74,13 +74,13 @@ const styles = makeStyles({
     }
   },
   button: {
-    // height: 74,
-    boxShadow: "3px 3px 10px 2px rgba(0,0,0,0.75)",
+    boxShadow: "0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12)"
   },
-  iconButton: {
-    // height: 50,
-    // width: 50,
-  },
+  caption: {
+    fontSize: "18px",
+    fontWeight: 400,
+    opacity: 0.7,
+  }
 });
 
 const ProfileAvatar = () => {
@@ -109,10 +109,10 @@ const ProfileAvatar = () => {
         <Typography variant="h5">React Front-End Developer</Typography>
         <br />
         {/* <Hidden xsDown> */}
-        <Typography variant="h6">Commercial Experience: 2 years</Typography>
-        <Typography variant="h6">City: Kyiv</Typography>
-        <Typography variant="h6">English: Upper-Intermediate</Typography>
-        <Typography variant="h6">Age: 24 y.o.</Typography>
+        <Typography variant="h6"><span className={classes.caption}>Commercial Experience:</span> 2 years</Typography>
+        <Typography variant="h6"><span className={classes.caption}>City:</span> Kyiv</Typography>
+        <Typography variant="h6"><span className={classes.caption}>English:</span>  Upper-Intermediate</Typography>
+        <Typography variant="h6"><span className={classes.caption}>Age:</span>  24 y.o.</Typography>
         {/* </Hidden> */}
       </div>
 

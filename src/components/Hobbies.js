@@ -13,7 +13,7 @@ const styles = makeStyles({
   },
   info: {
     padding: 12,
-    maxWidth: 550,
+    maxWidth: 500,
   },
 });
 

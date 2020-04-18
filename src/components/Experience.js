@@ -21,7 +21,7 @@ const styles = makeStyles({
   },
   root: {
     flexGrow: 1,
-    backgroundColor: "#1f1f1f",
+    // backgroundColor: "#1f1f1f",
     display: "flex",
     minHeight: 220,
     borderBottom: `1px solid white`,
@@ -90,7 +90,9 @@ const Experience = () => {
                   <Typography variant="subtitle1">
                     August 2019 - April 2020
                   </Typography>
-                  <Typography variant="body1">Moneyball</Typography>
+                  <Typography color="primary" variant="body1">
+                    Moneyball
+                  </Typography>
                 </div>
               }
             />
@@ -100,7 +102,9 @@ const Experience = () => {
                   <Typography variant="subtitle1">
                     September 2018 - July 2019
                   </Typography>
-                  <Typography variant="body1">Vitamin D</Typography>
+                  <Typography color="primary" variant="body1">
+                    Vitamin D
+                  </Typography>
                 </div>
               }
             />

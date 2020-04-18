@@ -13,7 +13,7 @@ const styles = makeStyles({
   },
   info: {
     padding: 12,
-    maxWidth: 550,
+    maxWidth: 500,
   },
 });
 
@@ -31,7 +31,7 @@ const Education = () => {
         </Typography>
         <br />
         <Typography variant="body1">
-          Bachelor Degree at National University of Dragomanov <br />
+          National University of Dragomanov <br />
           September 2014 - June 2018
         </Typography>
       </div>
