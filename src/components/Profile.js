@@ -87,7 +87,7 @@ const ProfileAvatar = () => {
   const classes = styles();
 
   const handleEmail = () => {
-    window.open("mailto:w.delic1ous.k@email.com", "_blank");
+    window.open("mailto:w.delic1ous.k@gmail.com", "_blank");
   };
 
   const handleTelegram = () => {
