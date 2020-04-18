@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/curriculum-vitae/static/js/main.087c9c0c.chunk.js",
+    "main.js.map": "/curriculum-vitae/static/js/main.087c9c0c.chunk.js.map",
+    "runtime-main.js": "/curriculum-vitae/static/js/runtime-main.59475df7.js",
+    "runtime-main.js.map": "/curriculum-vitae/static/js/runtime-main.59475df7.js.map",
+    "static/js/2.2baf546a.chunk.js": "/curriculum-vitae/static/js/2.2baf546a.chunk.js",
+    "static/js/2.2baf546a.chunk.js.map": "/curriculum-vitae/static/js/2.2baf546a.chunk.js.map",
+    "index.html": "/curriculum-vitae/index.html",
+    "precache-manifest.9106c5effde9deb6fba6725d7e483631.js": "/curriculum-vitae/precache-manifest.9106c5effde9deb6fba6725d7e483631.js",
+    "service-worker.js": "/curriculum-vitae/service-worker.js",
+    "static/js/2.2baf546a.chunk.js.LICENSE.txt": "/curriculum-vitae/static/js/2.2baf546a.chunk.js.LICENSE.txt",
+    "static/media/Avatar.jpg": "/curriculum-vitae/static/media/Avatar.fd7f00df.jpg",
+    "static/media/Avatar2.jpg": "/curriculum-vitae/static/media/Avatar2.a852e411.jpg",
+    "static/media/CV -Dmitry Sauliak.pdf": "/curriculum-vitae/static/media/CV -Dmitry Sauliak.a5dd11c6.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.59475df7.js",
+    "static/js/2.2baf546a.chunk.js",
+    "static/js/main.087c9c0c.chunk.js"
+  ]
+}
