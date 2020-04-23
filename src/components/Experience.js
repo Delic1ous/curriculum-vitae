@@ -136,7 +136,7 @@ const Experience = () => {
               administrating panels to encrypted messenger. Have been
               responsible for providing best UX and front-end part of
               applications. Most used technologies were React, React Router,
-              Redux, Mobx, Apollo GraphQL, Material UI.
+              Redux, Mobx, Apollo GraphQL, Electron, NodeJS, Material UI.
             </Typography>
           </TabPanel>
         </Hidden>

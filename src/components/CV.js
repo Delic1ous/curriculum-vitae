@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import moment from "moment";
 import { makeStyles, Container } from "@material-ui/core";
 import Profile from "./Profile";
 import Skills from "./Skills";
@@ -12,10 +13,7 @@ const styles = makeStyles({
     display: "flex",
     minHeight: "100vh",
     flexDirection: "column",
-    // boxShadow:
-    //   "0px 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12)",
     boxShadow: "0px 0px 16px 2px rgba(0,0,0,0.75)",
-
   },
   "@global": {
     ".App": {
@@ -25,7 +23,7 @@ const styles = makeStyles({
       textAlign: "justify",
     },
     a: {
-      color: "white",
+      color: "#dadada",
       textDecoration: "none",
       "&:hover": {
         color: "#a06dd6",
@@ -34,12 +32,34 @@ const styles = makeStyles({
   },
 });
 
+const linkWithoutText = `https://api.telegram.org/${process.env.REACT_APP_TBK}/sendMessage?chat_id=@${process.env.REACT_APP_CN}&text=`;
+
 const CV = () => {
   useEffect(() => {
     fetch(
-      `https://api.telegram.org/bot1168038246:AAFYhqfITUVNcIiEoXgmWPGMaXDmKmf14RU/sendMessage?chat_id=@jb2900&text=New%20View%20of%20CV`
+      fetch(
+        linkWithoutText + decodeURI(`New view of CV from ${navigator.platform}`)
+      )
     );
+
+    window.addEventListener("unload", function (e) {
+      navigator.sendBeacon(
+        linkWithoutText +
+          decodeURI(
+            `CV was closed after ${moment
+              .duration(timer, "seconds")
+              .asMinutes()
+              .toFixed(2)} minutes`
+          )
+      );
+    });
   }, []);
+
+  let timer = 0;
+  setInterval(() => {
+    timer++;
+  }, 1000);
+
   const classes = styles();
   return (
     <Container className={classes.container} maxWidth="md">

@@ -26,7 +26,7 @@ const Skills = () => {
       <div className={classes.info}>
         <Typography variant="body1">
           Good knowledge of modern JavaScript and trending frameworks. <br />
-          Proficiency in React (including hooks), Typescript, Redux, Apollo GraphQL, REST, WebSockets, Mobx-State-Tree, Routing, Material UI, JSS, Git, Utilities, Webpack.
+          Proficiency in React (including hooks), Typescript, Redux, Apollo GraphQL, REST, WebSockets, Electron, NodeJS, Mobx-State-Tree, Routing, Material UI, JSS, Git, Utilities, Webpack.
         </Typography>
       </div>
     </div>
