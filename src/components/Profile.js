@@ -1,14 +1,8 @@
 import React from "react";
+import moment from "moment";
 import AvatarImg from "../images/Avatar.jpg";
-import AvatarImg2 from "../images/Avatar2.jpg";
-import CV from "../images/CV -Dmitry Sauliak.pdf";
-import {
-  makeStyles,
-  Typography,
-  IconButton,
-  Tooltip,
-  Hidden,
-} from "@material-ui/core";
+import AvatarImg2 from "../images/Avatar2.jpeg";
+import { makeStyles, Typography, IconButton, Tooltip } from "@material-ui/core";
 import MailIcon from "@material-ui/icons/Mail";
 import DownloadIcon from "@material-ui/icons/PictureAsPdf";
 import { TelegramIcon } from "../icons/Telegram";
@@ -58,7 +52,7 @@ const styles = makeStyles({
     maxHeight: 272,
     "@media (max-width: 599px)": {
       paddingLeft: 0,
-      maxHeight: "unset"
+      maxHeight: "unset",
     },
   },
   socialButtons: {
@@ -70,17 +64,18 @@ const styles = makeStyles({
       marginTop: 24,
       flexDirection: "row",
       height: 50,
-      width: '100%'
-    }
+      width: "100%",
+    },
   },
   button: {
-    boxShadow: "0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12)"
+    boxShadow:
+      "0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12)",
   },
   caption: {
     fontSize: "18px",
     fontWeight: 400,
     opacity: 0.7,
-  }
+  },
 });
 
 const ProfileAvatar = () => {
@@ -100,6 +95,14 @@ const ProfileAvatar = () => {
       "_blank"
     );
   };
+
+  const handleCV = () => {
+    window.open(
+      "https://docs.google.com/document/d/1MfrXND1QjgZVHh8Hkrm5QgJcn2ea6uae9jRivDvqJuE/edit?usp=sharing",
+      "_blank"
+    );
+  };
+
   return (
     <div className={classes.profile}>
       <div className={classes.avatar} />
@@ -108,12 +111,20 @@ const ProfileAvatar = () => {
         <br />
         <Typography variant="h5">React Front-End Developer</Typography>
         <br />
-        {/* <Hidden xsDown> */}
-        <Typography variant="h6"><span className={classes.caption}>Commercial Experience:</span> 2 years</Typography>
-        <Typography variant="h6"><span className={classes.caption}>City:</span> Kyiv</Typography>
-        <Typography variant="h6"><span className={classes.caption}>English:</span>  Upper-Intermediate</Typography>
-        <Typography variant="h6"><span className={classes.caption}>Age:</span>  24 y.o.</Typography>
-        {/* </Hidden> */}
+        <Typography variant="h6">
+          <span className={classes.caption}>Commercial Experience:</span>{" "}
+          {moment().from("2018", true)}
+        </Typography>
+        <Typography variant="h6">
+          <span className={classes.caption}>City:</span> Kyiv
+        </Typography>
+        <Typography variant="h6">
+          <span className={classes.caption}>English:</span> Upper-Intermediate
+        </Typography>
+        <Typography variant="h6">
+          <span className={classes.caption}>Age:</span>{" "}
+          {moment().diff("1996-05-03", "years")} y.o.
+        </Typography>
       </div>
 
       <div className={classes.socialButtons}>
@@ -145,11 +156,13 @@ const ProfileAvatar = () => {
           </IconButton>
         </Tooltip>
         <Tooltip title="Download CV">
-          <a href={CV} download="CV - Dmitry Sauliak.pdf">
-            <IconButton className={classes.button} size="medium">
-              <DownloadIcon className={classes.iconButton} />
-            </IconButton>
-          </a>
+          <IconButton
+            onClick={handleCV}
+            className={classes.button}
+            size="medium"
+          >
+            <DownloadIcon className={classes.iconButton} />
+          </IconButton>
         </Tooltip>
       </div>
     </div>

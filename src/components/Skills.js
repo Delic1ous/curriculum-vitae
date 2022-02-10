@@ -25,8 +25,13 @@ const Skills = () => {
       </Typography>
       <div className={classes.info}>
         <Typography variant="body1">
-          Good knowledge of modern JavaScript and trending frameworks. <br />
-          Proficiency in React (including hooks), Typescript, Redux, Apollo GraphQL, REST, WebSockets, Electron, NodeJS, Mobx-State-Tree, Routing, Material UI, JSS, Git, Utilities, Webpack.
+          Good knowledge of modern JavaScript and trending frameworks. <p />
+          Proficiency in React (including hooks), Typescript, Redux, Apollo
+          GraphQL, React Hook Forms, REST, WebSockets , NodeJS, Mobx-State-Tree,
+          React Router, Material UI, JSS, Emotion, Git, Webpack, Parcel, Make,
+          Docker, Recharts, Lottie, React Native.
+          <p />
+          Experience with React Native, Electron.
         </Typography>
       </div>
     </div>

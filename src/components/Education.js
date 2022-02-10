@@ -26,8 +26,8 @@ const Education = () => {
       </Typography>
       <div className={classes.info}>
         <Typography variant="body1">
-          Informational Technologies learned mostly by self education from courses,
-          literature and official documentation since high school.
+          Informational Technologies learned mostly by self education from
+          courses, literature and official documentation since high school.
         </Typography>
         <br />
         <Typography variant="body1">
